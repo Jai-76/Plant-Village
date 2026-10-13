@@ -1,0 +1,15 @@
+streamlit>=1.32
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+torch>=2.0
+torchvision
+transformers>=4.36
+tensorflow>=2.15
+numpy
+pandas
+pillow
+scikit-learn
+matplotlib
+seaborn
+kaggle
