@@ -1,0 +1,12 @@
+streamlit>=1.32
+torch>=2.0
+torchvision
+transformers>=4.36
+tensorflow>=2.15
+numpy
+pandas
+pillow
+scikit-learn
+matplotlib
+seaborn
+kaggle
