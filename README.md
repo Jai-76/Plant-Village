@@ -79,8 +79,11 @@ For a Netlify frontend with a separate Python inference service:
 2. Confirm the Railway `/health` endpoint returns `{"status":"ok"}`.
 3. Replace `REPLACE_WITH_RAILWAY_DOMAIN` in `netlify.toml` with the Railway
    public domain, without the `https://` prefix.
-4. Deploy the repository to Netlify. Set the publish directory to `netlify`
-   (the included `netlify.toml` already does this).
+4. Deploy the repository to Netlify. The included `netlify.toml` sets the base
+   directory to `netlify`, publishes that directory, and uses no build command.
+   Keeping the base directory inside the static frontend prevents Netlify from
+   installing the root Python dependencies. Keep `requirements.txt` for Railway,
+   Streamlit, training, and local inference.
 
 Netlify cannot run the Streamlit server or the TensorFlow/PyTorch model itself;
 it only hosts the static client in this split deployment.
