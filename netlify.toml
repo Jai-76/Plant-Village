@@ -1,5 +1,7 @@
 [build]
-  publish = "netlify"
+  base = "netlify"
+  publish = "."
+  command = ""
 
 [[redirects]]
   from = "/api/*"
